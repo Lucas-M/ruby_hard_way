@@ -13,7 +13,7 @@ puts "I also said: '#{y}'."
 hilarious = false
 joke_evaluation = "Isn't that joke so funny?! #{hilarious}"
 
-w = "This is the left side of ..."
+w = "This is the left side of... "
 e = "a string with a right side."
 
 puts w + e
