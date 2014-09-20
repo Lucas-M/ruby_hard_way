@@ -1,0 +1,25 @@
+#
+puts
+print
+puts """
+gets
+gets.chomp
+gets.chomp.to_i
+$stdin
+ARGV
+ARGV.first
+obj = open(filename)
+obj.read
+obj.close()
+obj = open(filename, 'w')
+target.truncate(0)
+obj.write("text\n")
+def name_of_func(args)
+	operations
+	return (implied..will always return last expression)
+end
+obj.seek(0)
+words.split
+words.sort
+words.shift
+

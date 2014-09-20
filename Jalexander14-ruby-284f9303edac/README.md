@@ -1,0 +1,3 @@
+# README #
+
+For my project I intended to have each individual shape within the polyhedron cycle between random colors by having my ruby code generate an HTML file named vector_rb-results2.html that also uses SVG. However, SVG does not support random numbers and I was not able to figure out how to embed a scripting language properly, so instead I had each polygon cycle through three colors chosen randomly within the ruby code, this at least giving a brief illusion of randomness.
