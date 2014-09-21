@@ -12,7 +12,7 @@ module Dict
     def Dict.has_key(aDict, key)
     	# Given a key this will creat a number and then convert it to
     	# an index for the aDict's Buckets.
-    	return key.has % aDict.length
+    	return key.hash % aDict.length
     end
 
     def Dict.get_bucket(aDict, key)
@@ -34,6 +34,13 @@ module Dict
 
     	return -1, key, default
     end
+
+    def Dict.get(aDict, key, default=nil)
+        # Gets the value in a bucket for the given key, or the default.
+        i, k, v = Dict.get_slot(aDict, key, default=default)
+        return v
+    end
+
 
     def Dict.set(aDict, key, value)
     	# Sets the key to the value, replacing any existing value.
@@ -70,4 +77,3 @@ module Dict
     end
 
 end # end module
-
