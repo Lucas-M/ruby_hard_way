@@ -34,17 +34,17 @@ class Person
 	attr_accessor :pet
 end
 
-## Employee is-a person
-# class Employee < Person
+# Employee is-a person
+class Employee < Person
 
-# 	def initailize(name, salary)
-# 		## ?? hmm what is this strange magic
-# 		super(name)
-# 		## Employee has-a salary
-# 		@salary = salary
-# 	end
+	def initailize(name, salary)
+		## ?? hmm what is this strange magic
+		super(name)
+		## Employee has-a salary
+		@salary = salary
+	end
 
-# end
+end
 
 class Employee < Person
 
